@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For stevie :3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .stroke-text {
+            -webkit-text-stroke: 2px black; /* Black outline */
+            color: rgb(90, 8, 8); /* Fill color */
+        }
+    </style>
+    
+</head>
+<body class="bg-black text-white font-sans">
+    <style>
+        body {
+          background-image: url('./images/HELLO\ HOW\ ARE\ YOU.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+        }
+        </style>
+    <div id="main-page" class="min-h-screen flex flex-col justify-center items-center">
+        <h1 class="text-8xl font-bold text-red-800 mb-20 ">HERRO MY STEVIE :3</h1>
+        <div class="flex gap-2">
+            <button class="btn btn-outline btn-xl" onclick="goToHerroSaimah()">herro saimah :> </button>
+            <button class="btn btn-outline btn-xl btn-white transition-transform transform hover:scale-110" onclick="goToFlipYouBye()">flip you bye </button>
+        </div>
+    </div>
+
+    <div id="note-page" class="hidden min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-7xl font-bold text-red-800 mb-6">haiiii :3</h2>
+        
+        <button class="btn bg-red-800 hover:bg-red-800 text-white mb-6" onclick="showNoteCard()">read!</button>
+    
+        <div id="note-card" class="hidden bg-white text-black p-6 rounded-lg shadow-lg max-w-lg relative">
+            <button class="absolute top-2 right-2 text-red-600 font-bold" onclick="hideNoteCard()">X</button>
+
+            <p class="text-xl">HERRO :3 you're my favorite person stevie so i decided to code you a little website :p i know it's not the best but i tried for you TwT you mean so sos sososososo much to me and i don't want you being all lonely on valentines like a loser so let's spend it together :3 I love making you happy and laugh. hearing you be all happy is one of my favorite things ever. Just hearing you be all happy with me makes me feel like I've accomplished something. I want you in my life forever stevie you can't ever leave i want to keep making you happy for the rest of our lives :< when i'm with you i feel a way i've never felt with anyone else. I feel the happiest and most comfortable I've ever been. I have never met someone else who just gets me so well like you do. I feel like i can talk to you about anything and be as weird as i want and you would just be weird with me heh my weirdo :3 lets be sillys together forever no ones as sigma like us were witerwally the super sigmas xp i love just thinking about you, texting you, yapping to you, dreaming about you, stalking your repost, daydreaming about, anything that has to do with you i enjoy it soooo much. You're the most awsomest cool best person i know and i want you all to myself :> im cool too right heh? 
+            </p>           
+        </div>
+       
+
+        <div>
+        <h2 class="text-4xl font-semibold text-red-800 mb-6">heh a little paragraph to make you smile :></h2>
+        </div>
+        <button class="btn bg-red mt-10 transition-transform transform hover:scale-110" onclick="goToFlipYouByes()">you are NOT cool</button>   
+        <button class="btn bg-red mt-10 transition-transform transform hover:scale-110" onclick="goToGulpPage()">yes saimah you're so cool </button>   
+    </div>  
+  
+       
+       
+
+    <div id="gulp-page" class="hidden min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-6xl font-extrabold text-red-800 mb-10">gulp... i have something to tell you</h2>
+        
+        <button class="btn mb-10" onclick="goToMeowlenties()">what is it!?</button>
+    </div>
+
+
+    <div id="meowlenties-page" class="hidden min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-7xl font-extrabold text-red-800 stroke-text mb-6">WILL YOU BE MY... </h2>
+        <div id="cat-media" class="mb-6">
+            <video src="./images/FAFEFF18-279D-46DC-AA3B-85AA537A04A5.MOV" autoplay muted loop class="w-[400px] h-[300px]  "></video>
+        </div>
+        <div class="py-4">
+            <h2 class="text-7xl font-extrabold text-red-800 stroke-text mb-6">MEOWLENTINES :3</h2>
+            <p class="text-lg text-center text-gray-700">if you say no mavis will attack you grrr</p>
+        </div>
+        <div class="flex gap-4 mt-4">
+            <button class="btn bg-red-800 hover:bg-red-900 text-white text-sm px-4 py-2" onclick="showYesMessage()">YES MEOW MEOW MEOW MEOW</button>
+            <button id="no-button" class="btn bg-red-800 hover:bg-red-900 text-white text-sm px-4 py-2" onclick="angryEmoji()">erm no the fart</button>
+        </div>
+        <div id="angry-cat" class="hidden mt-10">
+            <img src="./images/IMG_6596.JPG" alt="Angry cat" id="angry-cat-img" class="w-32">
+        </div>
+        
+    </div>
+
+    <div id="yes-page" class="hidden min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-6xl font-extrabold text-red-800 stroke-text mb-6">YAYAY YOU SAID YES :> </h2>
+        <div class="flex gap-4">
+            <img src="./images/output-onlinegiftools.gif" alt="Happy cat gif" class="w-100 h-100">
+
+        </div>
+        <h2 class="text-6xl font-semibold text-red-800 mb-6">YOU'RE ALL MINE STEVIE :3</h2>
+    </div>
+
+    <div id="flip-page" class="hidden min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-7xl font-semibold text-red-800 mb-6"> WOW OKAY SO YOU HATE ME.</h2>
+        <div class="flex gap-4">
+            <img src="./images/IMG_6596.JPG" alt="Angry cat" class="w-60 h-60">
+        </div>
+            <p class="text-6xl font-extrabold text-red-800 stroke-text mb-6"> FLIP YOU >:[</p>
+            
+        </div>
+    </div>
+
+    <div id="flip2-page" class="hidden min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-7xl font-semibold text-red-800 mb-6"> IM SUPER COOL .</h2>
+        <div class="flex gap-4">
+            <img src="./images/IMG_6596.JPG" alt="Angry cat" class="w-60 h-60">
+        </div>
+            <p class="text-6xl font-extrabold text-red-800 stroke-text mb-6"> FLIP YOU >:[</p>
+            
+        </div>
+    </div>
+
+    <script>
+        function goToHerroSaimah() {
+            document.getElementById('main-page').classList.add('hidden');
+            document.getElementById('note-page').classList.remove('hidden');
+        }
+        
+        function goToGulpPage() {
+    document.getElementById('note-page').classList.add('hidden');
+    document.getElementById('gulp-page').classList.remove('hidden');
+}
+
+        
+        function goToMeowlenties() {
+            document.getElementById('gulp-page').classList.add('hidden');
+            document.getElementById('meowlenties-page').classList.remove('hidden');
+        }
+        
+        function showYesMessage() {
+            document.getElementById('meowlenties-page').classList.add('hidden');
+            document.getElementById('yes-page').classList.remove('hidden');
+        }
+        
+        function goToFlipYouBye() {
+            document.getElementById('main-page').classList.add('hidden');
+            document.getElementById('flip-page').classList.remove('hidden');
+        }
+
+        function goToFlipYouByes() {
+            document.getElementById('note-page').classList.add('hidden');
+            document.getElementById('flip2-page').classList.remove('hidden');
+        }
+        
+        let catSize = 128; // Initial size (in pixels)
+function angryEmoji() {
+    const angryCat = document.getElementById('angry-cat');
+    const catImg = document.getElementById('angry-cat-img');
+    angryCat.classList.remove('hidden');
+    catSize += 20; // Increase size by 20px each time
+    catImg.style.width = catSize + 'px';
+    }
+
+    function showNoteCard() {
+    document.getElementById('note-card').classList.remove('hidden');
+}
+
+function hideNoteCard() {
+    document.getElementById('note-card').classList.add('hidden');
+}
+
+
+    </script>
+</body>
+</html>
